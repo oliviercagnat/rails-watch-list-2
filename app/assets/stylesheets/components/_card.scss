@@ -1,0 +1,97 @@
+// Flexbox
+.cards-container {
+  display: flex;
+  margin: 13px;
+}
+
+.cards-container .cards {
+  flex-grow: 1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+// Responsiveness
+@media(max-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Card design
+.card {
+  border-radius: 3%;
+  width: 16rem;
+  box-shadow: 0px 0px 14px 3px #000000;
+  transition: width 0.5s, margin 0.5s, box-shadow 0.5s, border 0.5s;
+  &:hover {
+    transition: width 0.5s, margin 0.5s, box-shadow 0.5s, border 0.5s;
+    width: 17rem;
+    margin: -5px;
+    box-shadow: 0px 0px 20px 10px #000000;
+    border: 2px solid #287ca6;
+  }
+}
+
+.card-list {
+  background-color: #272831;
+}
+
+.card-add {
+  background-color: #4e4d54;
+}
+
+.card-picture {
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
+
+.card-title {
+  color: white;
+}
+
+.card-comment {
+  color: #97969e;
+}
+
+.card-delete-button {
+  text-decoration: none;
+  color: #FADA51;
+  &:hover {
+    color: #287ca6;
+  }
+}
+
+.card-create-button {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  &:hover {
+    color: #287ca6;
+  }
+}
+
+.card-comment-add {
+  padding-top: 3px;
+}
