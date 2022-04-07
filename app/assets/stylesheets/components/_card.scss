@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
+  margin-left: 10px;
 }
 
 // Responsiveness
@@ -56,6 +57,7 @@
 
 .card-list {
   background-color: #272831;
+  text-align: justify;
 }
 
 .card-add {
@@ -67,26 +69,41 @@
   border-top-right-radius: 4%;
 }
 
+.card-body {
+  position: relative;
+}
+
 .card-title {
   color: white;
 }
 
 .card-comment {
   color: #97969e;
+  font-style: italic;
+}
+
+.card-overview {
+  color: white;
+  text-justify: inter-character
 }
 
 .card-delete-button {
   text-decoration: none;
   color: #FADA51;
+  position: absolute;
+  bottom: 10px;
   &:hover {
     color: #287ca6;
   }
 }
 
 .card-create-button {
+  font-family: var(--bs-body-font-family);
   text-decoration: none;
   color: white;
   font-size: 20px;
+  background-color: transparent;
+  border: 0;
   &:hover {
     color: #287ca6;
   }

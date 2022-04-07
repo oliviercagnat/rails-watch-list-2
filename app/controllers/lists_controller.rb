@@ -4,6 +4,7 @@ class ListsController < ApplicationController
  # GET /lists
   def index
     @lists = List.all
+    @movies = Movie.all
   end
 
   # GET /lists/1

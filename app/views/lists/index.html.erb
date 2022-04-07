@@ -1,36 +1,22 @@
 <div class="banner">
   <div class="container">
-    <h1>Save any kind of movies</h1>
-    <h3 class="typed-js" data-controller="typed-js"></h3>
+    <span class="typed-js" data-controller="typed-js"></span>
   </div>
 </div>
 
-<div class="container mt-3">
-  <div class="row">
-    <div class="col-12">
-      <h1>All our <%= @lists.count %> Lists</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <%= link_to 'Create list', new_list_path, class: 'btn btn-outline-primary my-2 my-sm-0 ml-2' %>
-    </div>
-  </div>
-  <div class="row">
+<div class="cards-home-container">
+  <div class="cards-home">
     <% @lists.each do |list| %>
-      <div class="col-4">
-        <div class="flat-card">
-          <div class="flat-card-content">
-              <p>Photo not here</p>
-            <div class="flat-card-title">
-              <h4><%= list.name %></h4>
-            </div>
-          </div>
-          <div class="flat-card-actions">
-            <%= link_to 'More info', list_path(list) %>
-          </div>
+      <%= link_to list_path(list), class: "text-decoration-none" do %>
+        <div class="card-home" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.movies.sample.poster_url %>)">
+          <%= list.name %>
         </div>
-      </div>
+      <% end %>
     <% end %>
+      <%= link_to new_list_path(@list), class: "text-decoration-none" do %>
+        <div class="card-home" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @movies.sample.poster_url %>)">
+          Create a new list
+        </div>
+      <% end %>
   </div>
 </div>

@@ -4,7 +4,6 @@
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
 
-// if it loads every channels, should I import my function?
-import { myFunction } from "./controllers/sticky_navbar"
-myFunction()
-initSortable()
+console.log("Hello from index.js")
+
+// initSortable()
