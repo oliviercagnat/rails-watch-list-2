@@ -21,7 +21,8 @@
 
 .header-delete-button {
   text-decoration: none;
-  color: #FADA51;
+  color: white;
+
   &:hover {
     color: #287ca6;
   }
@@ -29,7 +30,7 @@
 
 .header-create-button {
   text-decoration: none;
-  color: white;
+  color: #FADA51;
   &:hover {
     color: #287ca6;
   }
@@ -38,7 +39,7 @@
 .modal-button {
   font-family: var(--bs-body-font-family);
   text-decoration: none;
-  color: white;
+  color: #FADA51;
   border: 0;
   background-color: transparent;
   &:hover {

@@ -74,7 +74,7 @@
 }
 
 .card-title {
-  color: white;
+  color: #FADA51;
 }
 
 .card-comment {
@@ -89,11 +89,12 @@
 
 .card-delete-button {
   text-decoration: none;
-  color: #FADA51;
+  color: #287ca6;
   position: absolute;
   bottom: 10px;
+  text-shadow: 0px 0px 20px #000000;
   &:hover {
-    color: #287ca6;
+    color: white;
   }
 }
 
