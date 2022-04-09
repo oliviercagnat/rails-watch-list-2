@@ -85,7 +85,7 @@
 
       <%# ADD A BOOK MARK - CARD %>
       <div class="card card-add">
-        <img src=<%= @movies.find_by(id: rand(797..830)).poster_url %> class="card-picture" alt="movie-poster">
+        <img src=<%= @movies.sample.poster_url %> class="card-picture" alt="movie-poster">
         <div class="card-body">
           <button type="button" class="card-create-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Create a bookmark
