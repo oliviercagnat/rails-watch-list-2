@@ -4,6 +4,7 @@ import Typed from "typed.js"
 
 export default class extends Controller {
   connect() {
+    console.log("Hello from typed_js_controller");
     new Typed(this.element, {
       strings: ["Create a list", "Add movies"],
       typeSpeed: 40,

@@ -3,9 +3,12 @@
 
 import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"
+console.log("Hello from indexcontroller.js")
 
 const application = Application.start()
 const context = require.context("controllers", true, /_controller\.js$/)
 application.load(definitionsFromContext(context))
 
-console.log("Hello from indexcontroller.js")
+
+// import { initSortable } from "./init_sortable"
+// initSortable()

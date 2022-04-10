@@ -13,10 +13,10 @@
         </div>
       <% end %>
     <% end %>
-      <%= link_to new_list_path(@list), class: "text-decoration-none" do %>
-        <div class="card-home" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @movies.sample.poster_url %>)">
-          Create a new list
-        </div>
-      <% end %>
+    <%= link_to new_list_path(@list), class: "text-decoration-none" do %>
+      <div class="card-home" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @movies.sample.poster_url %>)">
+        Create a new list
+      </div>
+    <% end %>
   </div>
 </div>

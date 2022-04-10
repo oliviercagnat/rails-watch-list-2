@@ -6,4 +6,8 @@ channels.keys().forEach(channels)
 
 console.log("Hello from index.js")
 
-// initSortable()
+// import { initSortableList } from "./init_sortable_list"
+// initSortableList()
+
+// import { initSortableMovie } from "./init_sortable_movie"
+// initSortableMovie()
