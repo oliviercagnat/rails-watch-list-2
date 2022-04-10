@@ -8,7 +8,7 @@
   <div class="cards-home">
     <% @lists.each do |list| %>
       <%= link_to list_path(list), class: "text-decoration-none" do %>
-        <div class="card-home" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.movies.sample.poster_url %>)">
+        <div class="card-home" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : list.movies.sample.poster_url %>)">
           <%= list.name %>
         </div>
       <% end %>
