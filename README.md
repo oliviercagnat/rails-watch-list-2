@@ -1,24 +1,14 @@
-# README
+Rails-Watch-List
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails web app that permits you to create lists in which you will save your favourite movies.
 
-Things you may want to cover:
+Link to the app: https://rails-watch-list-09042022.herokuapp.com/lists
 
-* Ruby version
+Home page: 
 
-* System dependencies
+https://user-images.githubusercontent.com/75303846/163667228-d1d8fa42-4d76-44e7-840e-2fdab3052b4e.mp4
 
-* Configuration
+Show page: 
 
-* Database creation
+https://user-images.githubusercontent.com/75303846/163667239-f98c526c-60fc-4f7e-a7c4-b2adacde98b8.mp4
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
